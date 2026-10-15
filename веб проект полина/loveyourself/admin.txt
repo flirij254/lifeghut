@@ -1,0 +1,3 @@
+username - birukovapt
+email - admin@admin.com
+password - admin123

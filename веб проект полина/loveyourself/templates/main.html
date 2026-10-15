@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Компьютерный магазин TechMart — ноутбуки, ПК, комплектующие и аксессуары">
+    <title>TechMart — Компьютерный магазин</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header__inner">
+            <a href="/" class="logo">
+                <span class="logo__icon">💻</span>
+                <span class="logo__text">TechMart</span>
+            </a>
+
+            <nav class="nav" aria-label="Основная навигация">
+                <ul class="nav__list">
+                    <li><a href="#catalog">Каталог</a></li>
+                    <li><a href="#laptops">Ноутбуки</a></li>
+                    <li><a href="#pcs">Компьютеры</a></li>
+                    <li><a href="#components">Комплектующие</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <form class="search" role="search">
+                    <input type="search" placeholder="Поиск товаров..." aria-label="Поиск">
+                    <button type="submit" aria-label="Найти">🔍</button>
+                </form>
+                <a href="#cart" class="cart" aria-label="Корзина">
+                    🛒 <span class="cart__count">0</span>
+                </a>
+                <a href="#login" class="btn btn--outline">Войти</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Главный баннер -->
+        <section class="hero">
+            <div class="container hero__inner">
+                <div class="hero__content">
+                    <h1 class="hero__title">Собери мечту — собери свой ПК</h1>
+                    <p class="hero__subtitle">
+                        Тысячи комплектующих, честные цены и бесплатная сборка от наших специалистов.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#catalog" class="btn btn--primary">Перейти в каталог</a>
+                        <a href="#builder" class="btn btn--ghost">Собрать ПК онлайн</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="images/hero-pc.png" alt="Игровой компьютер" width="500" height="400">
+                </div>
+            </div>
+        </section>
+
+        <!-- Категории -->
+        <section class="categories container" id="catalog">
+            <h2 class="section-title">Популярные категории</h2>
+            <ul class="categories__list">
+                <li class="category-card">
+                    <a href="#laptops">
+                        <img src="images/cat-laptops.png" alt="Ноутбуки" width="120" height="120">
+                        <h3>Ноутбуки</h3>
+                        <span>от 35 990 ₽</span>
+                    </a>
+                </li>
+                <li class="category-card">
+                    <a href="#pcs">
+                        <img src="images/cat-pc.png" alt="Готовые ПК" width="120" height="120">
+                        <h3>Готовые ПК</h3>
+                        <span>от 49 990 ₽</span>
+                    </a>
+                </li>
+                <li class="category-card">
+                    <a href="#components">
+                        <img src="images/cat-gpu.png" alt="Видеокарты" width="120" height="120">
+                        <h3>Видеокарты</h3>
+                        <span>от 24 990 ₽</span>
+                    </a>
+                </li>
+                <li class="category-card">
+                    <a href="#accessories">
+                        <img src="images/cat-mouse.png" alt="Аксессуары" width="120" height="120">
+                        <h3>Аксессуары</h3>
+                        <span>от 790 ₽</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Хиты продаж -->
+        <section class="products container" id="popular">
+            <div class="section-header">
+                <h2 class="section-title">Хиты продаж</h2>
+                <a href="#all-products" class="link-all">Все товары →</a>
+            </div>
+
+            <div class="products__grid">
+
+                <article class="product-card">
+                    <div class="product-card__badge">Хит</div>
+                    <a href="#product-1" class="product-card__image">
+                        <img src="images/product-1.jpg" alt="Игровой ноутбук Acer Nitro 5">
+                    </a>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">
+                            <a href="#product-1">Ноутбук Acer Nitro 5 15.6"</a>
+                        </h3>
+                        <p class="product-card__specs">Intel Core i5 · 16 ГБ · RTX 4050 · SSD 512 ГБ</p>
+                        <div class="product-card__rating">★★★★★ <span>(156 отзывов)</span></div>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">74 990 ₽</span>
+                            <button class="btn btn--primary btn--sm">В корзину</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-card__badge product-card__badge--sale">-15%</div>
+                    <a href="#product-2" class="product-card__image">
+                        <img src="images/product-2.jpg" alt="Видеокарта RTX 4070">
+                    </a>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">
+                            <a href="#product-2">Видеокарта NVIDIA RTX 4070 12GB</a>
+                        </h3>
+                        <p class="product-card__specs">GDDR6X · 192 bit · PCIe 4.0</p>
+                        <div class="product-card__rating">★★★★☆ <span>(89 отзывов)</span></div>
+                        <div class="product-card__footer">
+                            <span class="product-card__price product-card__price--old">64 990 ₽</span>
+                            <span class="product-card__price">54 990 ₽</span>
+                            <button class="btn btn--primary btn--sm">В корзину</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <a href="#product-3" class="product-card__image">
+                        <img src="images/product-3.jpg" alt="Механическая клавиатура">
+                    </a>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">
+                            <a href="#product-3">Клавиатура Logitech G Pro X</a>
+                        </h3>
+                        <p class="product-card__specs">Механическая · RGB · USB</p>
+                        <div class="product-card__rating">★★★★★ <span>(312 отзывов)</span></div>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">12 490 ₽</span>
+                            <button class="btn btn--primary btn--sm">В корзину</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-card__badge">Новинка</div>
+                    <a href="#product-4" class="product-card__image">
+                        <img src="images/product-4.jpg" alt="Процессор AMD Ryzen 7">
+                    </a>
+                    <div class="product-card__body">
+                        <h3 class="product-card__title">
+                            <a href="#product-4">Процессор AMD Ryzen 7 7800X3D</a>
+                        </h3>
+                        <p class="product-card__specs">8 ядер · 16 потоков · AM5</p>
+                        <div class="product-card__rating">★★★★★ <span>(45 отзывов)</span></div>
+                        <div class="product-card__footer">
+                            <span class="product-card__price">42 990 ₽</span>
+                            <button class="btn btn--primary btn--sm">В корзину</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Преимущества -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Почему выбирают нас</h2>
+                <ul class="features__grid">
+                    <li class="feature">
+                        <span class="feature__icon">🚚</span>
+                        <h3>Быстрая доставка</h3>
+                        <p>По Москве — за 2 часа, по России — от 1 дня.</p>
+                    </li>
+                    <li class="feature">
+                        <span class="feature__icon">🛡️</span>
+                        <h3>Гарантия до 3 лет</h3>
+                        <p>Официальная гарантия на всю технику.</p>
+                    </li>
+                    <li class="feature">
+                        <span class="feature__icon">🔧</span>
+                        <h3>Бесплатная сборка</h3>
+                        <p>Соберём и настроим ваш ПК бесплатно.</p>
+                    </li>
+                    <li class="feature">
+                        <span class="feature__icon">💳</span>
+                        <h3>Рассрочка 0%</h3>
+                        <p>Покупайте сейчас — платите потом.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Подписка -->
+        <section class="subscribe">
+            <div class="container subscribe__inner">
+                <div>
+                    <h2>Скидка 10% на первый заказ</h2>
+                    <p>Подпишитесь на рассылку и получайте новинки и акции первыми.</p>
+                </div>
+                <form class="subscribe__form">
+                    <input type="email" placeholder="Ваш e-mail" required aria-label="E-mail">
+                    <button type="submit" class="btn btn--primary">Подписаться</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer" id="contacts">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <a href="/" class="logo logo--light">
+                    <span class="logo__icon">💻</span>
+                    <span class="logo__text">TechMart</span>
+                </a>
+                <p>Компьютерный магазин с 2008 года. Всё для игр и работы.</p>
+            </div>
+
+            <div class="footer__col">
+                <h3>Каталог</h3>
+                <ul>
+                    <li><a href="#laptops">Ноутбуки</a></li>
+                    <li><a href="#pcs">Компьютеры</a></li>
+                    <li><a href="#components">Комплектующие</a></li>
+                    <li><a href="#accessories">Аксессуары</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h3>Покупателям</h3>
+                <ul>
+                    <li><a href="#delivery">Доставка и оплата</a></li>
+                    <li><a href="#warranty">Гарантия</a></li>
+                    <li><a href="#returns">Возврат</a></li>
+                    <li><a href="#support">Поддержка</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h3>Контакты</h3>
+                <address>
+                    <p>г. Москва, ул. Ленина, 15</p>
+                    <p><a href="tel:+74951234567">+7 (495) 123-45-67</a></p>
+                    <p><a href="mailto:info@techmart.ru">info@techmart.ru</a></p>
+                </address>
+                <div class="socials">
+                    <a href="#" aria-label="ВКонтакте">VK</a>
+                    <a href="#" aria-label="Telegram">TG</a>
+                    <a href="#" aria-label="YouTube">YT</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <div class="container">
+                <p>© 2025 TechMart. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+</body>
+</html>
